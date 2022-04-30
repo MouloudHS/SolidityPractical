@@ -18,6 +18,7 @@ contract StorageFactory is SimpleStorage{
 	function getNbrOfContracts() public view returns(uint256){
 		return simpleStorageArray.length;
 	}
+	
 	// Call the basic functionnality
 	function sfAddPerson(uint256 _simpleStorageIndex, string memory _name, uint256 _age) public {
 		SimpleStorage simplestorage = SimpleStorage(address(simpleStorageArray[_simpleStorageIndex]));
